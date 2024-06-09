@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import "./scss/style.scss";
+import Headroom from "react-headroom";
+import Hero from "./components/Hero";
+import Page from "./pages/Page";
+import Slider from "./components/Slider";
+import People from "./components/People";
+import Footer from "./pages/Footer";
+import LoadingVideo from "./components/LoadingVideo";
+import CurrencyConverter from "./components/CurrencyConverter";
+import PaymentWay from "./components/PaymentWay";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Headroom>
+        <Navbar />
+      </Headroom>
+      <Hero />
+      <Page />
+      <People />
+      <LoadingVideo />
+      <PaymentWay />
+      <CurrencyConverter />
+      <Footer />
+      {/* <HoverImageLinks/> */}
     </div>
   );
 }

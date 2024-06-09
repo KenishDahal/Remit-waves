@@ -1,0 +1,130 @@
+.hero {
+  background-image: url("../../../public/kids.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  color: white;
+  margin-top: -100px;
+  text-align: left;
+  position: relative;
+  &__firstPart {
+    padding-block: 40px;
+    padding-inline: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .button {
+      width: 100px;
+    }
+  }
+  &__secondPart {
+    margin: auto;
+    width: 85%;
+    border: 3px solid rgb(79, 79, 79);
+    border-radius: 3%;
+    padding: 10px;
+    padding-block: 160px 30px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    &__button {
+      text-align: center;
+      margin: auto;
+    }
+    &__cashback {
+      padding: 20px;
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      svg {
+        font-size: 30px;
+      }
+      &__dollar {
+        font-size: 15px;
+      }
+    }
+  }
+}
+.secondSection {
+  // display: none;
+  margin-inline: 33px;
+  padding-top: 72px;
+  position: absolute;
+  top: 10%;
+  align-items: center;
+  // margin: auto;
+  &__title {
+    padding-block: 0 48px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+// 520px
+@include u.breakpoint(small) {
+  .hero {
+    padding-top: 100px;
+    &__firstPart {
+    }
+    &__secondPart {
+      width: 380px;
+    }
+  }
+  .secondSection {
+    display: block;
+    &__title {
+      text-align: center;
+      gap: 15px;
+    }
+  }
+  .main {
+    margin-top: -1px;
+  }
+}
+
+// 944 px
+@include u.breakpoint(mediumPlus) {
+  .hero {
+    &__firstPart {
+      // padding-left: 4.5rem;
+      margin: 0px 3.4rem;
+    }
+  }
+}
+
+//   1156 px
+@include u.breakpoint(large) {
+  .hero {
+    &__firstPart {
+      text-align: left;
+      .h1 {
+        font-size: 5.5rem;
+        align-items: center;
+      }
+    }
+    &__secondPart {
+      top: 29%;
+    }
+  }
+}
+
+.main {
+  background-color: black;
+}

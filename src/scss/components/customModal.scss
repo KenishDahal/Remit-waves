@@ -1,0 +1,36 @@
+.customModal {
+  padding: 32px 0;
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  text-align: center;
+  &__modal {
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+  }
+  &__title {
+    font-size: 3.75rem;
+    line-height: 4rem;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 798px) {
+  .customModal {
+    &__title {
+      font-size: 3rem;
+      line-height: 3rem;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .customModal {
+    &__title {
+      font-size: 3rem;
+      line-height: 3rem;
+      font-weight: 700;
+    }
+  }
+}

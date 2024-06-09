@@ -1,0 +1,18 @@
+.footer {
+  background-color: black;
+  height: 50px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0px;
+  justify-content: space-between;
+  padding-inline: 34px;
+}
+
+@include u.breakpoint(mediumPlus) {
+  .footer {
+    padding-inline: 64px;
+    padding-block: 20px;
+  }
+}

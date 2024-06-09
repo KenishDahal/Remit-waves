@@ -1,0 +1,86 @@
+.card {
+  background-image: url("../../../public/house.jpg");
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  border-radius: 16px;
+  padding-block: 40px 9px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  .h4 {
+    font-weight: 900;
+  }
+  &__button {
+    text-align: center;
+    margin: auto;
+  }
+  &__cashback {
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    svg {
+      font-size: 30px;
+    }
+    &__dollar {
+      font-size: 15px;
+    }
+  }
+}
+
+.react-multi-carousel-list {
+  padding-bottom: 50px;
+  width: 250px;
+  margin: auto;
+  // 520px
+  @include u.breakpoint(small) {
+    width: 500px;
+  }
+
+  // 700 px
+  @include u.breakpoint(medium) {
+    width: 600px;
+  }
+
+  // 944 px
+  @include u.breakpoint(mediumPlus) {
+    width: 800px;
+  }
+}
+.react-multi-carousel-track {
+  // gap: 1px;
+  @include u.breakpoint(medium) {
+    gap: 5px;
+  }
+  // 1156 px
+  @include u.breakpoint(large) {
+    gap: 25px;
+  }
+}
+
+.react-multi-carousel-dot-list {
+  padding-top: 120px;
+}
+
+.card--1 {
+  background-image: url("../../../public/house.jpg");
+}
+.card--2 {
+  background-image: url("../../../public/kids.jpg");
+}
+.card--3 {
+  background-image: url("../../../public/country.jpg");
+}
+.card--4 {
+  background-image: url("../../../public/utility.jpg");
+}
+.card--5 {
+  background-image: url("../../../public/sitting.jpg");
+}

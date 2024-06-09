@@ -1,0 +1,73 @@
+.people {
+  display: flex;
+  gap: 10px;
+  padding-inline: 30px;
+  position: relative;
+  // width: 400px;
+  // border-radius:black 10px;
+  overflow-x: scroll;
+  background-color: black;
+  &__motion {
+    width: 25%;
+    background-size: cover;
+    height: 500px;
+    transition: 1s;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    &__desc {
+      transform: rotate(-90deg);
+      color: white;
+      .body{
+        display: none;
+      }
+    }
+  }
+  &__one {
+    background-image: url("../../../public/house.jpg");
+  }
+  &__two {
+    background-image: url("../../../public/women.jpg");
+  }
+  &__three {
+    background-image: url("../../../public/sitting.jpg");
+  }
+  &__four {
+    background-image: url("../../../public/unplash-men.jpg");
+  }
+  &__motion:hover{
+    width:70%;
+    padding-inline: 70px;
+
+     #ee  {
+      transform: rotate(0deg);
+      .body{
+        display: block;
+      }
+    }
+  }
+}
+
+@include u.breakpoint(small) {
+  .people {  
+
+    &__motion {
+      // width: 2%;
+    }
+    &__motion:hover{
+      padding-inline: 10px;
+    }
+}
+}
+// 700px
+@include u.breakpoint(medium) {
+
+}
+
+// 944 px
+@include u.breakpoint(mediumPlus) {
+  .people {  
+    // margin-inline: 4rem;
+  }
+}

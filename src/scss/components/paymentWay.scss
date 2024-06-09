@@ -1,0 +1,134 @@
+.paymentWay {
+  &__card {
+    margin-inline: 34px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 450px;
+    border: 0.3px solid black;
+    border-radius: 10px;
+    margin-block: 20px;
+    padding-block: 40px;
+    figure {
+      margin: 0 0 15px 0;
+      img {
+        height: 15px;
+        width: 70px;
+      }
+    }
+    &__diagram {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 25px;
+      figure {
+        margin: 0;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        .img2 {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+    &__labels {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      position: relative;
+      margin-top: 25px;
+      &__line {
+        display: flex;
+        gap: 100px;
+        margin-inline: 20px;
+        background-color: rgb(201, 201, 201);
+        height: 2px;
+        min-width: 240px;
+        position: absolute;
+        top: -25%;
+        &__indicator {
+          margin-top: -6px;
+          height: 13.5px;
+          width: 13.5px;
+          background-color: rgb(103, 193, 103);
+          border-radius: 10px;
+        }
+        &__indicator2 {
+          background-color: rgb(201, 201, 201);
+        }
+        &__indicator3 {
+          background-color: rgb(201, 201, 201);
+        }
+      }
+    }
+  }
+}
+
+@include u.breakpoint(small) {
+  .paymentWay {
+    &__card {
+      // width: 500px;
+      margin-inline: auto;
+      max-width: 500px;
+      padding-block: 50px;
+      &__diagram {
+        flex-direction: row;
+        gap: 50px;
+        margin-top: 40px;
+        figure {
+          img {
+            width: 70px;
+            height: 70px;
+          }
+          .img2 {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      &__labels {
+        margin-top: 30px;
+        gap: 95px;
+        &__line {
+          min-width: 340px;
+          top: -35%;
+          gap: 150px;
+        }
+      }
+    }
+  }
+}
+
+@include u.breakpoint(mediumPlus) {
+  .paymentWay {
+    &__card {
+      // width: 500px;
+      max-width: 800px;
+      padding-block: 70px;
+      &__diagram {
+        flex-direction: row;
+        gap: 100px;
+        margin-top: 45px;
+        figure {
+          img {
+            width: 80px;
+            height: 80px;
+          }
+          .img2 {
+            width: 120px;
+            height: 120px;
+          }
+        }
+      }
+      &__labels {
+        margin-top: 35px;
+        gap: 170px;
+        &__line {
+          min-width: 500px;
+          top: -60%;
+          gap: 230px;
+        }
+      }
+    }
+  }
+}

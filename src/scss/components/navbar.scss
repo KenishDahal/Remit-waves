@@ -1,0 +1,152 @@
+/* navbar style start  */
+.main--nav {
+  position: static;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+  height: 6rem;
+  border-bottom: 1px hsla(0, 9%, 49%, 0.1) solid;
+  &__logo {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    font-weight: 700;
+    padding-inline: 4rem;
+    &__name {
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: rgb(255, 255, 255);
+      font-family: "Exo 2", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+      letter-spacing: 0.05em;
+    }
+    figure {
+      margin: 0;
+    }
+    img {
+      width: 4rem;
+    }
+  }
+  &__menu--link {
+    width: 100%;
+    align-items: center;
+
+    ul {
+      display: flex;
+      gap: 40px;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+      font-weight: 700;
+      a {
+        color: rgb(255, 255, 255);
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+      }
+    }
+  }
+  &__btn {
+    width: 100%;
+    text-align: end;
+    padding-inline: 0.2rem;
+    .button {
+      padding: 10px 12px;
+      // background-color: white;
+      // color: rgb(0, 0, 0);
+      // padding: 0.5rem 1rem;
+      // border-radius: 6px;
+      // text-decoration: none;
+      // border: none;
+    }
+  }
+  &__bar {
+    display: none;
+  }
+}
+
+@include u.breakpoint(small) {
+  .main--nav {
+    img {
+      width: 8rem;
+      // height: 8rem;
+    }
+  }
+}
+
+/* responsive css style  */
+// Normal way
+@media (max-width: 998px) {
+  .main--nav {
+    &__logo {
+      padding-left: 1rem;
+    }
+    &__menu--link {
+      display: none;
+    }
+    &__bar {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 798px) {
+  .main--nav {
+    &__btn {
+      .button {
+        padding: 5px;
+      }
+    }
+    &__bar {
+      display: block;
+      font-size: 1.55rem;
+      color: rgb(229 59 58);
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .main--nav {
+    height: 5rem;
+
+    &__logo {
+      height: 6rem;
+      padding-left: 1rem;
+    }
+    // &__btn {
+    //   // display: none;
+    // }
+  }
+  .logo h2 {
+    font-size: 2rem;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 40%;
+  height: 100vh;
+  color: black;
+  align-items: center;
+  position: relative;
+  left: 60%;
+  background-color: white;
+  &--form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &--button {
+    margin-top: 50px;
+  }
+}
