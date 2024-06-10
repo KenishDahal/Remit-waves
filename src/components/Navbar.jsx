@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../images/logo.jpeg";
+import logo from "../images/logo-remitwaves.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -20,7 +20,6 @@ const Navbar = () => {
           <figure className="">
             <img src={logo} alt="logo" />
           </figure>
-=
         </div>
 
         {/* 2nd menu part  */}

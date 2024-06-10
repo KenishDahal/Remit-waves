@@ -14,21 +14,13 @@
     align-items: center;
     font-weight: 700;
     padding-inline: 4rem;
-    &__name {
-      color: rgb(255, 255, 255);
-      -webkit-text-stroke-width: 0.5px;
-      -webkit-text-stroke-color: rgb(255, 255, 255);
-      font-family: "Exo 2", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 900;
-      font-style: normal;
-      letter-spacing: 0.05em;
-    }
     figure {
       margin: 0;
     }
     img {
-      width: 4rem;
+      width: 5rem;
+      background-color: white;
+
     }
   }
   &__menu--link {
@@ -55,12 +47,6 @@
     padding-inline: 0.2rem;
     .button {
       padding: 10px 12px;
-      // background-color: white;
-      // color: rgb(0, 0, 0);
-      // padding: 0.5rem 1rem;
-      // border-radius: 6px;
-      // text-decoration: none;
-      // border: none;
     }
   }
   &__bar {
