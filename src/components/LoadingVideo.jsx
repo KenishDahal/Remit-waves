@@ -1,6 +1,5 @@
 import React from "react";
 import load from "../images/liquid-loading-animation.gif";
-import anime from "../images/dollar-anime.gif";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
