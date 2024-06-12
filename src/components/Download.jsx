@@ -7,15 +7,17 @@ const Download = () => {
 
   useEffect(() => {
     if (isAndroid) {
-      window.location.href = "link here";
-      //eg :  "https://play.google.com/store/apps/details?id=com.tetraz.capsigo";
+      window.location.href = 
+      // "link here";
+       "https://play.google.com/store/apps/details?id=com.{name}";
     } else if (isIOS) {
-      window.location.href = "link here";
-
-      // eg : "https://apps.apple.com/app/capsigo/id1547746310";
+      window.location.href = 
+      // "link here";
+     "https://apps.apple.com/app/{name}/{id}";
     } else {
-      window.location.href = "link here";
-      // ("http://localhost:3000/");
+      window.location.href =
+      //  "link here";
+      "http://localhost:3000/";
     }
     navigate("/");
   });
